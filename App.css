@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lora:wght@400;500&display=swap');
+
+/* Reset */
+body {
+  margin: 0;
+  font-family: 'Lora', serif;
+  background-color: #f8f6f1; /* tom bege clássico */
+  color: #2c2c2c;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #000;
+  padding: 20px 40px;
+  border-bottom: 2px solid #bfa46f; /* detalhe dourado */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  color: #f8f6f1;
+  letter-spacing: 2px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #f8f6f1;
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #bfa46f;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  color: #fff;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+}
+
+.hero p {
+  font-family: 'Lora', serif;
+  font-size: 20px;
+  color: #fff;
+  background-color: rgba(0,0,0,0.5);
+  padding: 12px 24px;
+  border-radius: 6px;
+}
+
+/* Galeria */
+.galeria {
+  margin-top: 60px;
+  padding: 40px;
+  background-color: #fdfdfd;
+}
+
+.galeria h2 {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  color: #2c2c2c;
+  border-bottom: 1px solid #bfa46f;
+  display: inline-block;
+  margin-bottom: 40px;
+}
+
+.obra {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+  gap: 30px;
+}
+
+.obra img {
+  width: 400px;          /* largura igual à img6 */
+  height: 250px;         /* altura igual à img6 */
+  object-fit: cover;     /* corta o excesso mantendo proporção */
+  object-position: center; /* centraliza o corte */
+  border: 2px solid #bfa46f;
+  border-radius: 6px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+.obra h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  margin: 0;
+  color: #2c2c2c;
+}
+
+.obra p {
+  font-family: 'Lora', serif;
+  line-height: 1.6;
+  color: #444;
+}
+
+/* Exposições */
+.exposicoes {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
+
+.exposicoes h2 {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 42px;
+  font-family: 'Playfair Display', serif;
+  color: #fff;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+}
+
+/* Botões */
+button {
+  padding: 12px 28px;
+  border: 1px solid #bfa46f;
+  background-color: #5a2a27; /* bordô clássico */
+  color: #f8f6f1;
+  font-family: 'Playfair Display', serif;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #2c2c2c;
+  color: #bfa46f;
+}
+
+/* Sobre nós */
+#sobre {
+  text-align: center;
+  margin-top: 60px;
+  padding: 40px;
+  background-color: #fdfdfd;
+}
+
+#sobre h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  color: #2c2c2c;
+  border-bottom: 1px solid #bfa46f;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+#sobre p {
+  font-family: 'Lora', serif;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Contato */
+#contato {
+  text-align: center;
+  margin-top: 60px;
+  padding: 40px;
+  background-color: #fdfdfd;
+}
+
+#contato h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  color: #2c2c2c;
+  border-bottom: 1px solid #bfa46f;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+#contato form input,
+#contato form textarea {
+  font-family: 'Lora', serif;
+  padding: 12px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#contato form button {
+  margin-top: 10px;
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  margin-top: 60px;
+  padding: 20px;
+  background-color: #000;
+  color: #f8f6f1;
+  font-family: 'Lora', serif;
+  border-top: 2px solid #bfa46f;
+}
+
